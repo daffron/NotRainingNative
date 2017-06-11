@@ -1,15 +1,15 @@
 import React from 'react'
 import {StyleSheet, Text, View} from 'react-native'
-//import DryBackground from './DryBackground'
+import DryBackground from './DryBackground'
 
 function No (props) {
   return (
-
+    <DryBackground>
       <View style={styles.container}>
         <Text style={styles.text}> Is it raining in Auckland? </Text>
-        <br /><br />
         <Text style={styles.text}>No</Text>
       </View>
+    </DryBackground>
 
   )
 }
@@ -31,7 +31,8 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     color: 'white',
     backgroundColor: 'rgba(0,0,0,0)',
-    fontSize: 32
+    fontSize: 32,
+    marginTop: 50
   }
 })
 

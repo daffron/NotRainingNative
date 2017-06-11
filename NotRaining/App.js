@@ -2,7 +2,7 @@ import React from 'react'
 import { StyleSheet, Text, View } from 'react-native'
 import {getWeather} from './api'
 
-//import No from './No'
+import No from './No'
 import Yes from './Yes'
 
 export default class App extends React.Component {
@@ -58,7 +58,7 @@ export default class App extends React.Component {
     return (
       <View style={styles.container}>
         {this.state.yes && <Yes />}
-        {!this.state.yes && <Yes />}
+        {!this.state.yes && <No />}
       </View>
     )
   }

@@ -4,14 +4,13 @@ import WetBackground from './WetBackground'
 
 function Yes (props) {
   return (
-    <WetBackground>
+   <WetBackground>
       <View style={styles.container}>
         <Text style={styles.text}> Is it raining in Auckland? </Text>
-        <br />
-        <br />
         <Text style={styles.text}>Yes</Text>
       </View>
-    </WetBackground>
+      </WetBackground>
+    
   )
 }
 
@@ -32,6 +31,7 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     color: 'white',
     backgroundColor: 'rgba(0,0,0,0)',
-    fontSize: 32
+    fontSize: 32,
+    marginTop: 50
   }
 })
